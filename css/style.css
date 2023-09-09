@@ -1,0 +1,244 @@
+body{font-family: 'Inter', sans-serif;}
+
+h1,h2,h3,h4,h5,h6{font-family: 'Abril Fatface', cursive;}
+
+hr{height: 2px; background-color: #979797; opacity: 1; margin:60px 0 !important;}
+
+.fs-7{font-size: 14px;}
+
+.fs-8{font-size: 12px;}
+
+.pt-section{padding-top:9rem; }
+
+.bg-prime{background-color: #FC621C !important;}
+
+.btn-primary{border-color: #FC621C !important ;}
+
+.btn-primary:hover{background-color: #eb530df4 !important ;}
+
+.show-on-mobile{display: none;}
+
+.error{border-color: rgb(210, 2, 2) !important; box-shadow: 0 0 0 0.1rem rgb(224, 2, 2) !important;}
+
+.success{border-color: green !important; box-shadow: 0 0 0 0.1rem green !important;}
+
+.shadow-success{  text-shadow: 0 0 3px green, 0 0 5px green;}
+
+.shadow-danger{  text-shadow: 0 0 3px red, 0 0 5px red;}
+/*Start header */
+.nav-link{ color: black;}
+
+.nav-item a:not(.dropdown-item):before,.nav-item .active:after{
+    content: '';
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    height: 4px;
+    width:0;
+    background-color: #FD7233;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.nav-item a:hover:not(.dropdown-item):before,.nav-item .active::after{width:100%}
+
+.dropdown-toggle::after{color: transparent !important; }
+
+.notify{ width:20px;height: 20px;}
+
+.btn-check:checked+.btn.notify-btn, 
+.btn.notify-btn.active, .btn.show,
+.btn.notify-btn:first-child:active,
+:not(.btn-check)+.btn.notify-btn:active{border-color:transparent}
+/*end header*/
+/* Start pop-in section */
+.log-in-close{  
+    font-family: cursive;
+    font-size: 17px;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    background-color: red;
+    cursor: pointer;
+}
+
+.log-in-form{
+    transform: scale(0);
+    transition: 0.5 all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5 all;
+    -ms-transition: 0.5 all;
+    -o-transition: 0.5 all;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    background: #000000c3;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.show-login{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+/* End pop-in section */
+/* Start hero-section */
+.hero-section{ background-image: linear-gradient(to bottom, transparent 90%, #FC621C 10%);}
+
+.main-header{font-size: 85px;}
+
+.hero-first-bg{padding-top: 100px;}
+
+.hero-content-bottom{margin-top: -150px;}
+/* End hero-section */
+/*Start Why us section */ 
+.why-us{height:135vh}
+
+.line{ background-color: white; width:118px; height:2px; left:45%; top:83%}
+
+.link-tab{cursor: pointer;}
+
+.link-tab.active::after{opacity: 0;}
+
+.tab-content{display: none;}
+
+.tab-content.active{display: block;}
+
+.why-us-content .box .img{position: relative;}
+
+.why-us-content .box .img::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #150a0594
+}
+/*End why us section*/
+/*Start form section*/
+.booking-section .ellipse{ left:4%}
+
+.book-form-height{height: 268px;}
+
+/*End form section*/
+/*Start comfortable-car section*/
+.comfortable-car-content p{font-size: 14.5px;}
+/*End comfortable-car section*/
+.img-circle{ border-radius:45% ;-webkit-border-radius:45% ; -moz-border-radius:45% ; -ms-border-radius:45% ; -o-border-radius:45% ; }
+/*Start car-hiring*/
+.car-hiring{margin-top: 80px; background-image: linear-gradient(to bottom,#FC621C 80% , white 20%);}
+
+.hiring-h2{font-size:65px;}
+
+.hiring-extra-img-1{top:20%}
+
+.hiring-extra-img-2{top:70%; right:20px}
+/*End car-hiring*/
+/*start staff*/
+.staff .line{ background-color: white; width:100px; height:1px; left:61%; top:55%}
+/*End staff*/
+/*start opinion */
+.opinion .heading p{left:20%; top:-30px}
+
+.opinion-content-width{width: 103%;  }
+
+.opinion .content .owl-carousel .owl-item img {
+    display: block;
+     width: auto;}
+.opinion .content .owl-carousel .owl-nav {
+        text-align: center;
+        margin-left: -5%;
+    }
+ .owl-carousel .owl-nav button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 40px !important;
+    border-radius: 50%;
+}
+ .owl-carousel .owl-nav button:active,  .owl-carousel .owl-nav button:hover{
+    background:#fc621c !important; color: white !important;
+}
+.box-opinion{background-color: #F8F8F8; }
+/*End opinion*/
+
+/* srart footer*/
+footer{background-color: #150A05;}
+
+footer form input{background-color: #fc621c24 !important;}
+
+footer form input::placeholder{color: white !important; font-size: 12px;}
+/*End footer*/
+/*meadia query*/
+@media (max-width:768px) {
+    .show-on-mobile{display: flex;}
+
+    .show-on-disktop{display: none;}
+    
+    .log-in-form{width: 100%;}
+    .main-header{font-size:40px}
+    
+    .staff h3, .box h3{font-size: 14px !important;}
+
+    .staff h3 .line,.box h3 .line{width:50px; left:53%}
+
+    .box p{font-size: 9px !important;}
+
+    .booking-img{margin-top: 400px;}
+
+    .comfortable-p{font-size: 11px !important;}
+
+    .car-hiring h2{font-size: 40px;}
+
+    .hiring-extra-img-1{width:150px; left:-10% !important}
+
+    .hiring-extra-img-2{width:150px; right:-10%}
+
+    .staff h3 .line {left:75%;}
+
+    .opinion .heading > p,.car-hiring p, footer p,.staff p, .staff a{font-size: 12px;}
+
+    .staff svg {width:15px; height:15px;}
+
+    .opinion .heading > p{top:0}
+
+    footer hr{margin: 35px 0 !important;}   
+
+    .form-footer button{width:50% !important; }
+}
+/*end media*/
+@media (max-width:394px){
+    section p{text-align: start;}
+    .log-in-form{width: 376px !important; padding-top: 50px;}
+    .log-in-flex{align-items: start !important;}
+    .main-header{font-size:30px; margin-top: 15px;}
+    .hero-first-bg{ width: 100%;}
+    .hero-2-img{width: 100%; padding-left: 20px;}
+    .hero-content-bottom {margin-top: 0px; }
+    .why-us{height:145vh}
+    .why-us-content .row{justify-content: center;}
+    .why-us-content .row .box{margin-top:40px ;}
+    .opinion .heading p{width: 75% !important;}
+    
+    .opinion-content-width{width: 100%;  }
+    .opinion .content .owl-carousel .owl-nav {margin-top: 8px;}
+
+    .staff h3{font-size: 24px !important;}
+    .staff h3 .line {left:50%;}
+    .staff p, .staff a{font-size: 17px;}
+    iframe{width: 100% !important;}
+}
